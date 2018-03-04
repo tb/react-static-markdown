@@ -42,7 +42,7 @@ Usage
 
 ## Example usage without mdx-loader
 
-Markdown is transformed to mdx during `getRoutes` and then evaluated to component.
+Markdown is transformed to mdx js code string during `getRoutes` and then evaluated to component.
 
 static.config.js
 
