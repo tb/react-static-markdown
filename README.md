@@ -1,5 +1,8 @@
 # [react-static-markdown](https://github.com/tb/react-static-markdown)
 
+[![Build Status](https://travis-ci.org/tb/react-static-markdown.svg?branch=master)](https://travis-ci.org/tb/react-static-markdown)
+[![npm version](https://badge.fury.io/js/react-static-markdown.svg)](http://badge.fury.io/js/react-static-markdown)
+
 Markdown files utils for [react-static](https://github.com/nozzle/react-static)
 
 ## Install
