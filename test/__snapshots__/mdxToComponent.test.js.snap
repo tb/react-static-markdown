@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mdxToComponent 1`] = `
+<div>
+  <h1>
+    Hey 
+    React Value
+    !
+  </h1>
+  <h1
+    id="Header"
+  >
+    Header
+  </h1>
+  <p>
+    Sample text
+  </p>
+  <div>
+    Hello React Value
+  </div>
+</div>
+`;

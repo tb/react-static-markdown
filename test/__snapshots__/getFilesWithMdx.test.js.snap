@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getFilesWithMdx 1`] = `
+Object {
+  "content": "prop value
+prop Hello
+
+<h1>Hey {value}!</h1>
+
+# Header
+
+Sample text
+
+<Hello value={value} />",
+  "contentmdx": "
+module.exports = function({ factories={}, value, Hello }) {
+  const {
+    h1 = createFactory('h1'),
+    p = createFactory('p'),
+    wrapper = createFactory('div'),
+  } = factories
+
+  return wrapper({},
+
+createElement(
+  \\"h1\\",
+  null,
+  \\"Hey \\",
+  value,
+  \\"!\\"
+),
+h1({\\"id\\": \\"Header\\"},
+  \\"Header\\",
+),
+p({},
+  \\"Sample text\\",
+),
+createElement(Hello, { value: value })
+
+  )
+}
+",
+  "path": "/about",
+  "title": "About",
+}
+`;

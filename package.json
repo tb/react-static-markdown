@@ -1,0 +1,45 @@
+{
+  "name": "react-static-markdown",
+  "version": "0.0.1",
+  "description": "Markdown files utils for react-static",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint *.js --fix",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tb/react-static-markdown.git"
+  },
+  "keywords": [
+    "makrdown",
+    "react",
+    "static"
+  ],
+  "author": "Tomasz Bąk <t.bak@selleo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tb/react-static-markdown/issues"
+  },
+  "homepage": "https://github.com/tb/react-static-markdown#readme",
+  "dependencies": {
+    "globby": "^8.0.0",
+    "gray-matter": "^3.0.0",
+    "mdxc": "^1.0.0",
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.1.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.1.0",
+    "jest": "^22.4.2",
+    "prettier": "^1.11.1",
+    "react-test-renderer": "^16.2.0"
+  }
+}
