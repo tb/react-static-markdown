@@ -1,6 +1,6 @@
 {
   "name": "react-static-markdown",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Markdown files utils for react-static",
   "main": "index.js",
   "scripts": {

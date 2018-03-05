@@ -14,10 +14,23 @@ const factories = {
     React.createElement('pre', {id: 'codeFactory'}, children),
 };
 
-test('mdxToComponent', () => {
-  return getFilesWithMdx('test/pages/*.md').then(pages => {
-    expect(pages.length).toBe(1);
-    const Component = mdxToComponent(pages[0].contentmdx);
+describe('mdxToComponent', () => {
+  test('render valid', () => {
+    return getFilesWithMdx('test/pages/*.md').then(pages => {
+      expect(pages.length).toBe(1);
+      const Component = mdxToComponent(pages[0].content);
+      const res = renderer.create(Component({
+        factories,
+        value: 'React Value',
+        Hello,
+      }));
+      expect(res.toJSON()).toMatchSnapshot();
+    });
+  });
+
+  test('render without prop', () => {
+    const content = `<Hello value={value} />`
+    const Component = mdxToComponent(content);
     const res = renderer.create(Component({
       factories,
       value: 'React Value',

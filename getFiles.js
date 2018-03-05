@@ -5,5 +5,5 @@ const matter = require('gray-matter');
 module.exports = async patterns =>
   (await globby(patterns)).map(filepath => {
     const {data, content} = matter(fs.readFileSync(filepath, 'utf8'));
-    return Object.assign({content}, data);
+    return {...data, content};
   });

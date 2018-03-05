@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`mdxToComponent 1`] = `
+exports[`mdxToComponent render valid 1`] = `
 <div>
   <h1>
     Hey 
@@ -26,3 +26,5 @@ exports[`mdxToComponent 1`] = `
   </div>
 </div>
 `;
+
+exports[`mdxToComponent render without prop 1`] = `"Error: Unexpected token <"`;

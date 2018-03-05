@@ -2,20 +2,7 @@
 
 exports[`getFilesWithMdx 1`] = `
 Object {
-  "content": "prop value
-prop Hello
-
-<h1>Hey {value}!</h1>
-
-# Header
-
-Sample text
-
-    Sample code block
-
-<Hello value={value} />
-",
-  "contentmdx": "
+  "content": "
 module.exports = function({ factories={}, value, Hello }) {
   const {
     code = createFactory('code'),
