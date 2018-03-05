@@ -1,10 +1,12 @@
-const MDXC = require('mdxc');
+var MDXC = require('mdxc');
 
-const mdxc = new MDXC({
+var mdxc = new MDXC({
   commonJS: true,
   pragma: 'createElement',
   linkify: true,
-  typographer: true,
+  typographer: true
 });
 
-module.exports = markdown => mdxc.render(markdown);
+module.exports = function (markdown) {
+  return mdxc.render(markdown);
+};
