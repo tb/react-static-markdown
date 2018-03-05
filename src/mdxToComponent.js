@@ -1,9 +1,9 @@
 var React = require('react');
 
-module.exports = function (code) {
-  var module = { exports: null };
+module.exports = function(code) {
+  var module = {exports: null};
   var createFactory = React.createFactory,
-      createElement = React.createElement;
+    createElement = React.createElement;
 
   try {
     eval(code);

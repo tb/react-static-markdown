@@ -1,10 +1,11 @@
 {
   "name": "react-static-markdown",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "Markdown files utils for react-static",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint *.js --fix",
+    "build": "babel src --out-dir .",
+    "lint": "eslint {src,test}/*.js --fix",
     "test": "jest"
   },
   "repository": {
@@ -29,7 +30,9 @@
     "react": "^16.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
+    "babel-preset-es2017": "^6.24.1",
     "eslint": "^4.1.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-react-app": "^2.1.0",

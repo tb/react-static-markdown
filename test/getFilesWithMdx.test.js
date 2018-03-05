@@ -1,4 +1,4 @@
-const getFilesWithMdx = require('../getFilesWithMdx');
+const getFilesWithMdx = require('../src/getFilesWithMdx');
 
 test('getFilesWithMdx', () => {
   return getFilesWithMdx('test/pages/*.md').then(pages => {
