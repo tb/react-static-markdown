@@ -9,11 +9,17 @@ class Hello extends React.Component {
   }
 }
 
+const factories = {
+  'code': (props, children) =>
+    React.createElement('pre', {id: 'codeFactory'}, children),
+};
+
 test('mdxToComponent', () => {
   return getFilesWithMdx('test/pages/*.md').then(pages => {
     expect(pages.length).toBe(1);
-    const Component = mdxToComponent(pages[0].contentmdx)
+    const Component = mdxToComponent(pages[0].contentmdx);
     const res = renderer.create(Component({
+      factories,
       value: 'React Value',
       Hello,
     }));

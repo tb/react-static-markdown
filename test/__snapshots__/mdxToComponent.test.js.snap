@@ -15,6 +15,12 @@ exports[`mdxToComponent 1`] = `
   <p>
     Sample text
   </p>
+  <pre
+    id="codeFactory"
+  >
+    Sample code block
+
+  </pre>
   <div>
     Hello React Value
   </div>

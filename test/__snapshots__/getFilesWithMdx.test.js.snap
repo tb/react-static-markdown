@@ -11,10 +11,14 @@ prop Hello
 
 Sample text
 
-<Hello value={value} />",
+    Sample code block
+
+<Hello value={value} />
+",
   "contentmdx": "
 module.exports = function({ factories={}, value, Hello }) {
   const {
+    code = createFactory('code'),
     h1 = createFactory('h1'),
     p = createFactory('p'),
     wrapper = createFactory('div'),
@@ -35,6 +39,7 @@ h1({\\"id\\": \\"Header\\"},
 p({},
   \\"Sample text\\",
 ),
+code({}, \\"Sample code block\\\\n\\"),
 createElement(Hello, { value: value })
 
   )

@@ -11,4 +11,6 @@ prop Hello
 
 Sample text
 
+    Sample code block
+
 <Hello value={value} />
